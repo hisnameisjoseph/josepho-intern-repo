@@ -2,21 +2,21 @@
 
 ### 👨‍💻 My Role
 
-I’m an intern at Focus Bear, learning the team’s tech stack and contributing to its mission of improving productivity and well-being—especially for neurodivergent users.
+I’m an intern at Focus Bear, learning the team’s tech stack and contributing to its mission of improving productivity and well-being—especially for neurodivergent users and people who want to improve their productivity.
 
 **I’m currently working on:**
 - Learning NestJS, AWS, and backend architecture
-- Completing onboarding tasks and GitHub issues
+- Completing onboarding tasks and GitHub issues (reflection)
 
 **Availability:**  
-Monday to Friday, generally from **9:00 AM to 5:00 PM** (Melbourne time)
+Monday to Friday, generally from **9:00 AM to 5:00 PM** (Melbourne time), can be flexible if required (please let me know in advance).
 
 ---
 
 ### 🧠 How I Work Best
 
 **I do my best work when:**
-- I have a clear plan, checklist, or prioritised to-do list
+- I have a clear plan (e.g. deadlines), checklist, or prioritised to-do list
 - I understand the “why” behind a task
 - I’ve had enough sleep and followed my morning routine
 
@@ -33,7 +33,7 @@ Monday to Friday, generally from **9:00 AM to 5:00 PM** (Melbourne time)
 Short and clear, with context (especially for tasks). I appreciate examples in feedback or instructions.
 
 **Best way to reach me:**  
-- Discord: `hisnameisjoseph`  
+- Discord (and other social media platforms you can think of): `hisnameisjoseph`  
 - Email: josephforanu@gmail.com  
 - WhatsApp (if I don’t respond on Discord/email)
 
@@ -100,7 +100,7 @@ Just giving hints might delay my learning and productivity unnecessarily.
 That I’m quiet because I’m disinterested, but I’m probably confused or distracted.
 
 **A fun fact about me:**  
-I ran my first full marathon in April 2025! 🏃 I love checking out people’s Strava activities.
+I ran my first full marathon in April 2025! 🏃 I love checking out other people’s Strava activities and give kudos.
 
 **My work superpower is:**  
 I’m a strong evaluator, I enjoy reviewing others’ work and giving helpful feedback.  
