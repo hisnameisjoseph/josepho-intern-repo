@@ -7,5 +7,5 @@ I would love to contribute to the Agile process by breaking work into smaller ta
 and support improvements that align with project's sprint goals when required.
 
 ### How do your responsibilities overlap or interact with other roles in the team?
-Currently I am still working on the onboarding issues, but I believe overall my work will be required to collaborate with other teams like FE and QA, mobile team etc.
+Currently I am still working on the onboarding issues, but I believe overall my work will be required to collaborate with other teams like FE, QA, mobile dev team  as well as product and project managers etc.
 I also have to interact with project managers to get feedback and clarify requirements.
