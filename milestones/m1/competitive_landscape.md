@@ -11,3 +11,15 @@
 | **UI / UX Design**          | Clean, functional                                          | Highly polished                    | Very basic                         | Highly polished                         | Simple but less responsive UI (iPhone dynamic island not compatible)|
 | **Unique Features**         | routine + wellness                                         | Scheduled blocks                   | Full lock mode                     | **Widgets, calendar + health sync**     | Multi-language, Widgets, Add friends   |
 | **Trial / Subscription**    | 4.99 /m                                                    | 7-day free trial, 39.99 /py        | 59 life-time for pro               | 7-day free trial, 66 /py or 13 /pm      | 7-day free trial, 30USD /py
+
+
+## What makes Focus Bear different from these apps?
+I think what makes Focus Bear different is the features it offers, cover many aspects of the Focus / Well-being (routine builder, wellness...etc) applications unlike other competitors focus on specific or fewer features. Focus bear has its own value proposition in the market.
+## If you were a user, why would you choose Focus Bear over competitors?
+I think it would be the features that the app offers. It would be a good deal if users can save money by installing an app (or even use the premium functions) instead of having two or more apps for routine builder, well-being, focus and productivity (e.g. Freedom + Routinery would be around AU86 per year). 
+Easier to manage if features are all-in-one application, and compatability would be key for users to have seamless experience.
+## What’s one feature that other apps have that Focus Bear doesn’t?
+From the table, we can see that other apps have Widgets, sync with Calendar and Apple Health for mood tracking (which is related to well-being). Apple also comes with journaling which I believe is related to the wellbeing asepect. 
+Focus sounds are free and available on the Freedom Desktop app.
+Routinery can add friends to check their routines.
+## Based on your research, what’s one improvement you think Focus Bear could make?
