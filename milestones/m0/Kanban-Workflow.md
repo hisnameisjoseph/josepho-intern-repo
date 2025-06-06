@@ -11,3 +11,12 @@ Besides the items I mentioned in the previous answer, I can improve my workflow 
 - Using Kanban to identify bottlenecks or tasks that are stuck and adjust my focus accordingly.
 -	Breaking tasks into **smaller, actionable items** to reduce ambiguity and make progress easier to track.
 -	Using the board as a reflection tool during retrospectives to understand where I can optimise how I work or how I plan tasks.
+
+
+I have not yet seen Focus Bear Team's Kanban board, but here is my Kaban board that I made based on what I researched, as you can see, I have moved my Agile Workflows & Kanban (issue 5) from "in-review" to "In progress" as FocusBearQA made some comment and feedback for my markdown file for this issue. Once the markdown file is edited, I will move it to "in-review" board again so that I can easily see what issues should I work on next in the "in-progress" column. Once FocusBearQA approves my markdown files for issues, I will then move the issues to the "Done" column. 
+
+Screenshot of the Kanban board
+<img width="1512" alt="Screenshot 2025-06-06 at 12 34 24 pm" src="https://github.com/user-attachments/assets/4506c340-ac2a-44b1-9ae2-8d8835f442fe" />
+
+Screenshot of the status of the issue (Agile Workflows & Kanban #5)
+<img width="785" alt="Screenshot 2025-06-06 at 12 40 18 pm" src="https://github.com/user-attachments/assets/488ed62a-16ba-4773-b269-f0546538b54c" />
