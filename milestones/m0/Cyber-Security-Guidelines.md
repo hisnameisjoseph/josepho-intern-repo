@@ -19,3 +19,18 @@ On top of that, I will regularly monitor my account activity to make sure there 
 3. Report it, with potential security breach and what could have possibly been accessed from the unauthorised access of the account and data.
 4. Monitor related accounts and data access (to see if there's other suspicious activity)
 5. Reflect on that to see how I can strengthen my account access or prevent security breach in the future.
+
+Screenshots:
+
+GitHub 2FA:
+<img width="1496" alt="Screenshot 2025-06-06 at 10 17 13 am" src="https://github.com/user-attachments/assets/2cdbda22-9c9a-47fc-a6a1-d4edefe9e666" />
+
+iPhone lock settings:
+[<img src="https://github.com/user-attachments/assets/f5ede230-fdd8-4153-b878-3cc4f21363a1" width="250"/>](https://github.com/user-attachments/assets/f5ede230-fdd8-4153-b878-3cc4f21363a1)
+[<img src="https://github.com/user-attachments/assets/eb4b8e3f-d9cd-4f56-b725-4f3921ededb2" width="250"/>](https://github.com/user-attachments/assets/eb4b8e3f-d9cd-4f56-b725-4f3921ededb2)
+
+Currently I do not have password manager set up :(
+In terms of a new habit that I will adopt at Focus bear:
+I will review my GitHub and Google account activity logs regularly (weekly if possible), and report any unusual access patterns or login attempts. As I have already been using other methods (e.g. strong password, MFA) to protect my security and privacy of personal data a long time ago.
+
+
