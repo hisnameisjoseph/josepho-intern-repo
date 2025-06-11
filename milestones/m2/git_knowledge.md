@@ -15,6 +15,8 @@ I will use my free time to explore git client to see if I should start using it.
 # What was the most interesting thing you learned about Git today?
 The existence of Git client (thought people always use terminal to write git commands lines.) And the fact that there is even "paid" GUI for git client is mind-blowing! I guess people really need something that is more visualised when they are working on projects.
 
+From my understanding (articles online), there are many GUI as Git clients, e.g. GitHub Desktop, GitKraken, Sourcetree, TortoiseGit, SmartGit, GitForce, etc.
+
 
 
 
