@@ -7,6 +7,13 @@ I have used ChatGPT since late 2022 / early 2023 because I took a Natural Langua
 
 I have used ChatGPT in various occasions, e.g. debugging for my university assignments, leetcode practices when I get lost, simple tasks like writing emails or formatting documents (like I used ChatGPT to help me draft my markdown reflection for some of the onboarding tasks), interview preperation and counselling (not professional but it is helpful).
 
+<img width="1141" alt="Screenshot 2025-06-11 at 6 28 13 pm" src="https://github.com/user-attachments/assets/1d890c0d-1ffa-412b-8732-4cce7b7002ce" />
+Testing out using Copilot to generate a code snippet and try to use it to debug.
+
+<img width="1394" alt="Screenshot 2025-06-11 at 6 31 44 pm" src="https://github.com/user-attachments/assets/166a363c-8eec-4e95-8a19-98d923eb1a65" />
+using Copilot to do code review and debug
+
+
 ## What worked well? What didn’t?
 
 I am keen to utilise Copilot in my internship, and I am aware that, using AI for coding, it is important to understand the programming language, its syntax and the algorithms before using AI to facilitate. In the case when I use ChatGPT for coding, I realise that the solutions provided by ChatGPT (espcailly for leetcode questions or assginments) are usually not the most efficient (long runtime or required more memory). It also provides incorrect codes or codes that cannot be compiled.
