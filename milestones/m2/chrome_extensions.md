@@ -34,6 +34,3 @@
 
 ![React & Redux DevTools Installed](https://github.com/user-attachments/assets/93d2471b-7380-49ff-9750-6e5ac0600302)
 
----
-
-✅ *Task Completed and Submitted for QA Review.*
