@@ -104,3 +104,33 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 - [Vague Commit Message](https://github.com/hisnameisjoseph/josepho-intern-repo/commit/d88c8aa4db36e308955bdbd322c03d5723f9c53c)
 - [Overly Detailed Commit Message](https://github.com/hisnameisjoseph/josepho-intern-repo/commit/aa6313ef358d11659849e360a6b6bda7c4983a9d)
 - [Well-Structured Commit Message](https://github.com/hisnameisjoseph/josepho-intern-repo/commit/d8ea16b26a0450bcfc4424275ed32ef90ebaf034)
+
+--- 
+# Git Bisect
+
+## What does `git bisect` do?
+
+`git bisect` is a Git tool that helps identify which commit introduced a bug. It uses a binary search approach — you mark one commit as "good" and another as "bad" to narrow down the commits that need to be checked. Git continues narrowing down the commit range until it finds the exact commit where the issue was introduced.
+
+## When would you use it in a real-world debugging situation?
+
+I would use `git bisect` when:
+
+- A bug appears, but I'm not sure exactly which commit caused it.
+- The bug was introduced sometime in the past, and manually reviewing every commit would take too long.
+- The repository has many commits, making it inefficient to check them one-by-one.
+- I can write a simple test to check whether a commit is "good" or "bad" (which makes the bisect process very efficient).
+
+**Example:**  
+In my calculator.ts file (in practice folder), I accidentally introduced a bug into the `divide()` function by not handling division by zero. Using `git bisect` in my local Terminal, I was able to quickly find that the bug was introduced in commit [`349bfff`](349bfffc8c9ca26e59087ffe216735e147baf1e0) when I added the `power()` function and made changes to `divide()`.
+
+## How does it compare to manually reviewing commits?
+
+| Git Bisect            | Manual Commit Review  |
+|-----------------------|-----------------------|
+| Fast (logarithmic search) | Slow (linear review of every commit) |
+| Easy to automate      | Time-consuming and error-prone |
+| Works well for large projects | Becomes impractical for many commits |
+| Only need a simple test | Need to fully understand every commit manually |
+
+In short: `git bisect` saves a huge amount of time and reduces human error when debugging issues that may have been introduced several commits ago.
