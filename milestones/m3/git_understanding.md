@@ -2,7 +2,6 @@
 
 The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/projects/5/views/1?pane=issue&itemId=113330214&issue=hisnameisjoseph%7Cjosepho-intern-repo%7C60) exercise:  ➡️ [PR #78](https://github.com/hisnameisjoseph/josepho-intern-repo/pull/78)
 
----
 
 ## 🔎 Reflection
 
@@ -68,7 +67,7 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 - Keep commit history clean before opening a PR.
 
 
-## 📎 Link to Open-Source PR
+### 📎 Link to Open-Source PR
 
 [facebook/react PR #32099](https://github.com/facebook/react/pull/32099)
 
