@@ -74,6 +74,7 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 
 
 ---
+
 # Git Understanding - Git Messages:
 
 ## What makes a good commit message?
@@ -99,13 +100,15 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 
 ---
 
-# Example Commit Messages
+### Example Commit Messages
 
 - [Vague Commit Message](https://github.com/hisnameisjoseph/josepho-intern-repo/commit/d88c8aa4db36e308955bdbd322c03d5723f9c53c)
 - [Overly Detailed Commit Message](https://github.com/hisnameisjoseph/josepho-intern-repo/commit/aa6313ef358d11659849e360a6b6bda7c4983a9d)
 - [Well-Structured Commit Message](https://github.com/hisnameisjoseph/josepho-intern-repo/commit/d8ea16b26a0450bcfc4424275ed32ef90ebaf034)
 
+
 --- 
+
 # Git Bisect
 
 ## What does `git bisect` do?
