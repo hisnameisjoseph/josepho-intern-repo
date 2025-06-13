@@ -101,6 +101,6 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 
 # Example Commit Messages
 
-### 1 Vague Commit MessageVague Commit Message: 
-### 2 Overly Detailed Commit Message: 
-### 3 Well-Structured Commit Message: 
+### 1 Vague Commit MessageVague Commit Message: d88c8aa4db36e308955bdbd322c03d5723f9c53c
+### 2 Overly Detailed Commit Message: aa6313ef358d11659849e360a6b6bda7c4983a9d
+### 3 Well-Structured Commit Message: d8ea16b26a0450bcfc4424275ed32ef90ebaf034
