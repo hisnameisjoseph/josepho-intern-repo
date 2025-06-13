@@ -77,5 +77,30 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 # Git Understanding - Git Messages:
 
 ## What makes a good commit message?
+
+- Well-structured and easy to read.
+- Succinct and concise.
+- Describes **what** was changed and **why**.
+- Follows conventional formatting (e.g. `fix:`, `feat:`, `refactor:`).
+
 ## How does a clear commit message help in team collaboration?
+
+- Makes it easy for others (and future me) to understand changes quickly.
+- Reduces confusion during code reviews or debugging.
+- Improves workflow efficiency and team productivity.
+- Helps in generating changelogs or release notes automatically.
+
 ## How can poor commit messages cause issues later?
+
+- Difficult to trace the origin of bugs or issues.
+- Wastes time trying to figure out what a change was intended to do.
+- Increases chances of misunderstandings when reviewing old commits.
+- Makes the project history messy and harder to maintain.
+
+---
+
+# Example Commit Messages
+
+### 1 Vague Commit MessageVague Commit Message: 
+### 2 Overly Detailed Commit Message: 
+### 3 Well-Structured Commit Message: 
