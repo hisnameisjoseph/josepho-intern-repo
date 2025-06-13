@@ -67,7 +67,6 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 - Add screenshots, test results or notes when applicable.
 - Keep commit history clean before opening a PR.
 
----
 
 ## 📎 Link to Open-Source PR
 
@@ -77,4 +76,6 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 ---
 # Git Understanding - Git Messages:
 
-
+## What makes a good commit message?
+## How does a clear commit message help in team collaboration?
+## How can poor commit messages cause issues later?
