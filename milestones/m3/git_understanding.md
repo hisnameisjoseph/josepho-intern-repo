@@ -210,7 +210,33 @@ I was already familiar with `git log` and `git blame`, but testing `git cherry-p
 
 For this issue, I created a new branch called `issue_55` branch. I worked locally on my VS Code for this branch and follow the instructions from issue #55 to recreate the scenario.
 - I made sure I push the branch with the commits I have got with the command line: `git push --set-upstream origin issue_55`
+- ![Any commits for edited file in another branch do not effect the main branch](https://github.com/user-attachments/assets/d05f89bd-af96-4396-b443-d958334faefa)
 
 ### Why is pushing directly to main problematic?
+
+Pushing directly to main is risky, especially in a team setting, because it increases the chances of code conflicts and bugs. When multiple people work on the same branch, it becomes harder to track changes, review code, and resolve conflicts. Direct pushes can lead to unstable code, accidental overwrites, and make it difficult to identify which changes introduced bugs. 
+
+Using feature branches and pull requests allows:
+- Code reviews before merging
+- Easier conflict resolution
+- Better version control
+- Keeping main stable and production-ready.
+
 ### How do branches help with reviewing code?
+
+Branches allow developers to work on new features or fixes in isolation without affecting the main codebase. This makes reviewing changes much easier:
+- Pull requests can be created to compare branches with main.
+- Reviewers can clearly see what was changed, comment directly on specific lines, and request modifications.
+- The review process improves code quality, catches potential issues early, and promotes collaboration.
+
 ### What happens if two people edit the same file on different branches?
+
+If two people edit the same file on different branches:
+- Git will try to automatically merge changes if edits are in different parts of the file.
+- If both edits affect the same lines of code, a **merge conflict** occurs.
+- Developers must manually review the conflict, decide which changes to keep, or combine both versions into a working solution.
+
+This highlights the importance of:
+- Clear communication
+- Frequent syncing with main
+- Keeping branches up to date to reduce merge conflicts.
