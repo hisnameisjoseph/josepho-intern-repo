@@ -169,14 +169,24 @@ In short: `git bisect` saves a huge amount of time and reduces human error when 
 Here I modified the md file (this file) on my local device. Then I used `git checkout` command to retore the file from the main branch.
 
 - `git checkout main -- <file>`
-
-<img width="1000" alt="Image" src="https://github.com/user-attachments/assets/6991d1e1-7dd9-49b4-9318-945953992135" /> 
-
-used a differnt branch for testing out git command
-
-<img width="1000" alt="Image" src="https://github.com/user-attachments/assets/4a177afa-f893-427b-9db7-c2d6fd8062fd" /> 
-
-succencefully use `git checkout main --<file>` command to retrieve the original file (last commit to main) from the main branch.
+  - I created a new branch called `experiment` and made multiple commits.
+  - Steps I Took
+    - used a differnt branch for testing out git command
+      <img width="1000" alt="Image" src="https://github.com/user-attachments/assets/6991d1e1-7dd9-49b4-9318-945953992135" /> 
+    - succencefully use `git checkout main --<file>` command to retrieve the original file (last commit to main) from the main branch.
+      <img width="1000" alt="Image" src="https://github.com/user-attachments/assets/4a177afa-f893-427b-9db7-c2d6fd8062fd" /> 
 
 - `git cherry-pick <commit>`
 
+  - I created a new branch called `experiment` and made multiple commits.
+  - After a few commits, I only wanted to bring one specific commit into the `main` branch.
+  - Steps I Took
+    1. Added several commits and pushed them to the `experiment` branch.
+   ![Experiment branch ahead of main](https://github.com/user-attachments/assets/bd0ff4a6-1c2d-47fd-9e80-cd079daef8dd)
+    2. GitHub detected that my `experiment` branch was ahead of `main` by a few commits, but I didn't want to merge all of them.
+   ![GitHub prompting for PR](https://github.com/user-attachments/assets/b7ef0128-100d-4a56-a8dd-07e39867f1a5)
+    3. Identified the commit I wanted to cherry-pick:  
+   Commit hash: `fddb4cdab34da1c70d454c71e21c756f5258a0e8`
+    4. Used the `git cherry-pick` command on my `main` branch to apply that specific commit: `git cherry-pick fddb4cd`
+    5. The commit was successfully applied to `main` without merging all the other unrelated commits.
+    ![Cherry-pick success](https://github.com/user-attachments/assets/5dc9b9f5-52f6-4150-8f41-e42f8f71127d)
