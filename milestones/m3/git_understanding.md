@@ -240,3 +240,43 @@ This highlights the importance of:
 - Clear communication
 - Frequent syncing with main
 - Keeping branches up to date to reduce merge conflicts.
+
+---
+
+# Git Understanding - Staging vs Committing
+
+### 🔎 What is the difference between staging and committing?
+- **Staging (git add)**:  
+  - Selects which changes/files you want to include in your next commit.
+  - Think of it as "preparing your commit basket" before you hit submit.
+- **Committing (git commit)**:  
+  - Actually creates a snapshot of your staged changes into the repository history.
+  - This is the permanent record that gets tracked and shared.
+I have been using these two commands a lot during my internship (adding files, reflections, etc.).
+
+
+
+### 🔎 Why does Git separate these two steps?
+
+- Allows you to carefully review and select which changes you want to include. *For example, there were files that I modified and didn't want to include in the commit in the previous issue (like adding a typescript file and compiled javascript file locally for testing, but I didn't want to commit the compiled file).*
+- Gives you the flexibility to:
+  - Partially commit only some changes.
+  - Group multiple related changes into meaningful commits.
+  - Avoid accidentally committing unrelated edits.
+- Helps us keep clean and meaningful commit history.
+
+### 🔎 When would you want to stage changes without comitting?
+Sometimes I make multiple changes but want to commit them separately. Staging allows me to control exactly which files or changes to include in a commit. It also helps me review what will be committed before finalising it. This is helpful for keeping my commits clean and focused, especially when working on different parts of a file or multiple issues at once.
+
+### My Experiment & Workflow
+
+I’ve already been using both commands a lot during my internship (as I already knew this concept from university):
+
+- When I modify files locally (e.g. updating markdown reflections), I typically do:
+  ```bash
+  git status  # check which files are modified (and if they are staged), if not staged, they will be in red
+  git add .   # stage all changes (add all files)
+  git status  # check again to see which files are staged (they will be in green)
+  git commit -m "docs: add reflection for issue #XX"
+  git push
+  ```
