@@ -280,3 +280,5 @@ I’ve already been using both commands a lot during my internship (as I already
   git commit -m "docs: add reflection for issue #XX"
   git push
   ```
+  As you can see in the screenshot below.
+  ![Git staging and commit](<Screenshot 2025-06-16 at 5.38.41 pm.png>)
