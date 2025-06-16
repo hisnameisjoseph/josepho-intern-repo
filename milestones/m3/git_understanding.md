@@ -204,3 +204,12 @@ Here I modified the md file (this file) on my local device. Then I used `git che
 I think these commands will be really helpful for project management work, espcailly for debugging, like if a commit is bad and they want to retrive the previous commit from other branches, thery can use `git blame` to see the modification, use `git log` to view the commits and changes, based on the commit message... and then select the right commit from another branch by using `git checkout` to restore the file or use `git cherry-pick`for merging a speecific commit. I believe these commands help promote safe practices for debugging, rollback, and selective merging, especially in larger projects where multiple people are contributing and frequent merges happen.
 ### What surprised you while testing these commands?
 I was already familiar with `git log` and `git blame`, but testing `git cherry-pick` was quite interesting. The name itself caught my attention, and I found it very useful for selectively applying changes without needing to merge an entire branch. This is something I hadn't encountered in my previous solo projects or university work, but I can see how valuable it is for real-world team collaboration, particularly for fixing bugs (e.g. hotfixes) or pulling in isolated changes.
+
+---
+# Git Understanding - Branching & Team Collaboration
+
+For this issue, I created a new branch called `issue_55` branch. I worked locally on my VS Code for this branch and follow the instructions from issue #55 to recreate the scenario.
+
+### Why is pushing directly to main problematic?
+### How do branches help with reviewing code?
+### What happens if two people edit the same file on different branches?
