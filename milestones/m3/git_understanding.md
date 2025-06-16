@@ -168,5 +168,14 @@ In short: `git bisect` saves a huge amount of time and reduces human error when 
 #### Experiment with each command in your test repo
 Here I modified the md file (this file) on my local device. Then I used `git checkout` command to retore the file from the main branch.
 
+- `git checkout main -- <file>`
 
- 
+<img width="1000" alt="Image" src="https://github.com/user-attachments/assets/6991d1e1-7dd9-49b4-9318-945953992135" /> 
+
+used a differnt branch for testing out git command
+
+<img width="1000" alt="Image" src="https://github.com/user-attachments/assets/4a177afa-f893-427b-9db7-c2d6fd8062fd" /> 
+
+succencefully use `git checkout main --<file>` command to retrieve the original file (last commit to main) from the main branch.
+
+- `git cherry-pick <commit>`
