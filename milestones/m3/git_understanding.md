@@ -209,6 +209,7 @@ I was already familiar with `git log` and `git blame`, but testing `git cherry-p
 # Git Understanding - Branching & Team Collaboration
 
 For this issue, I created a new branch called `issue_55` branch. I worked locally on my VS Code for this branch and follow the instructions from issue #55 to recreate the scenario.
+- I made sure I push the branch with the commits I have got with the command line: `git push --set-upstream origin issue_55`
 
 ### Why is pushing directly to main problematic?
 ### How do branches help with reviewing code?
