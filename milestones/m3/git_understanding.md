@@ -190,3 +190,12 @@ Here I modified the md file (this file) on my local device. Then I used `git che
     4. Used the `git cherry-pick` command on my `main` branch to apply that specific commit: `git cherry-pick fddb4cd`
     5. The commit was successfully applied to `main` without merging all the other unrelated commits.
     ![Cherry-pick success](https://github.com/user-attachments/assets/5dc9b9f5-52f6-4150-8f41-e42f8f71127d)
+
+- `git log`
+  - I type in `git log` in Terminal, as you can see below, I managed to see the commit history and understand the interactions between my local commit and when I push the commits to the origin/main branch on GitHub. **Here I can see how important it is to have good commit messages.**
+    ![Screenshot for git log example](<Screenshot 2025-06-16 at 3.52.02 pm.png>)
+- `git blame`
+  - I use `git blame` command to see what I can check
+    ![Git blame command: shows files that can select to see the past changes](<Screenshot 2025-06-16 at 3.55.13 pm.png>)
+  - I selected the `git_understanding.md` file to inspect and see the past changes, I believe what I am seeing right here is the last commit for each line?
+  ![Past changes via using `git blame`](<Screenshot 2025-06-16 at 3.55.13 pm-1.png>)
