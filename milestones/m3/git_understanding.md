@@ -164,4 +164,9 @@ In short: `git bisect` saves a huge amount of time and reduces human error when 
 - `git blame <file>`
   - Show who last modified each line in a file and when.
   - **Use case**: While debugging, check which commit or developer introduced a specific line that might be causing an issue.
+
+#### Experiment with each command in your test repo
+Here I modified the md file (this file) on my local device. Then I used `git checkout` command to retore the file from the main branch.
+
+
  
