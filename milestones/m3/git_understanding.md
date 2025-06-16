@@ -136,3 +136,32 @@ In my calculator.ts file (in practice folder), I accidentally introduced a bug i
 | Only need a simple test | Need to fully understand every commit manually |
 
 In short: `git bisect` saves a huge amount of time and reduces human error when debugging issues that may have been introduced several commits ago.
+
+
+---
+# Git Understanding - Advacned Git Commands
+
+### What does each command do?
+
+- `git checkout main -- <file>`
+  - Restore a specific file from another branch (in this case, from the `main` branch), without switching branches entirely.
+  - **Use case**: Accidentally changed a file but want to revert it to how it is in `main`, while keeping your other changes intact.
+
+
+
+- `git cherry-pick <commit>`
+  - Apply a specific commit from another branch into your current branch without merging the entire branch.
+  - **Use case**: A teammate made a useful fix on their branch, and you only want to bring that fix into your current work without merging unrelated changes.
+
+
+
+- `git log`
+  - View commit history of the repository in chronological order.
+  - **Use case**: Track the commit history to review recent changes, investigate when a bug was introduced, or verify if certain features were merged.
+
+
+
+- `git blame <file>`
+  - Show who last modified each line in a file and when.
+  - **Use case**: While debugging, check which commit or developer introduced a specific line that might be causing an issue.
+ 
