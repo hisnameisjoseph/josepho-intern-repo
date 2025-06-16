@@ -167,6 +167,7 @@ In short: `git bisect` saves a huge amount of time and reduces human error when 
 
 #### Experiment with each command in your test repo
 Here I modified the md file (this file) on my local device. Then I used `git checkout` command to retore the file from the main branch.
+I created another branch here with gibberish: ajierwf;uawjowfiblhyaweqeoidja'WBf and hoping to use the git checkout command to restore this file.
 
 
  
