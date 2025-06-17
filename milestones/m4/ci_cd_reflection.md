@@ -86,4 +86,24 @@ CI/CD is a set of practices that enable development teams to deliver code change
       npm run spell-check || echo "Spell check failed, but continuing with commit."
       ```
 
+
+### What is the purpose of CI/CD?
+
+The purpose of CI/CD (Continuous Integration and Continuous Deployment) is to automate the process of integrating code changes, running tests, and deploying applications. 
+- CI (Continuous Integration) ensures that new code changes are automatically built and tested, helping to catch bugs early and keep the codebase stable. 
+- CD (Continuous Deployment or Delivery) automates the release process, making it faster and more reliable to deliver updates to users. Together, CI/CD reduces manual work, speeds up development, and improves software quality.
+
+### How does automating style checks improve project quality?
+
+Automating style checks ensures consistent code formatting, documentation standards, and coding practices across the entire project. This improves code readability and makes collaboration easier across different team members. Automated checks also catch formatting issues early, preventing small issues from accumulating over time.
+
+### What are some challenges with enforcing checks in CI/CD?
+
+Strict automated checks can sometimes block code from being merged if minor issues are not fixed, which may slow down development under tight deadlines. It may also require extra time to configure and maintain the rules. For example, my experience for this issue #71 with Husky and lint-staged showed that while these tools are powerful, they can also be a source of frustration if not configured properly. Occasionally, some checks may produce false positives, which require manual review and adjustment of rules.
+
+### How do CI/CD pipelines differ between small projects and large teams?
+
+- In small projects, CI/CD pipelines are usually simpler, focusing on basic tests, linting, and deployments, and can be adjusted quickly. 
+- In large teams, pipelines are more complex and include multiple stages such as code review gates, automated testing (unit, integration, end-to-end), security scans, and multi-environment deployments. They require careful coordination to ensure stability, scalability, and consistent code quality.
+
     
