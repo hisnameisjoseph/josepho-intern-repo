@@ -2,7 +2,7 @@
 
 ### What security measures do you currently follow, and where can you improve?
 MFA, strong password (special characters, upper and lower cases and no easy to guess personal information)
-I can probably improve with ensuring not using the same password with differnt accounts across differnt platforms (currently only use the same passwords (multiple password combinations) with the some of the accounts that have MFA enabled)
+I can probably improve with ensuring not using the same password with different accounts across different platforms (currently only use the same passwords (multiple password combinations) with the some of the accounts that have MFA enabled)
 Be cautious of any suspicious links, files and websites.
 
 ### How can you make secure behaviour a habit rather than an afterthought?

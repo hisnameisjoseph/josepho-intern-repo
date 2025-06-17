@@ -2,7 +2,7 @@
 
 ### How can you adjust your communication style to be more inclusive of neurodivergent users and teammates?
 - clear and concise language
-- diverse communication channels (see if the users or teamates prefer checking notifications on Discord, email or other media channels), or if the teammate / user prefers in-person communciation or online
+- diverse communication channels (see if the users or teamates prefer checking notifications on Discord, email or other media channels), or if the teammate / user prefers in-person communication or online
 - Offer information in multiple formats (e.g., written + visual or examples) for easier understanding.
 - Allow extra time to process—don’t expect instant replies or decisions. (I need this)
 - Share advance notice when tasks, meetings, or deadlines change to reduce stress. (I also need this)

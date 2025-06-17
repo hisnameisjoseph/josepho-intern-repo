@@ -5,7 +5,7 @@ I have used ChatGPT since late 2022 / early 2023 because I took a Natural Langua
 
 ![Screenshot showing that I have installed GitHub Copilot](image.png)
 
-I have used ChatGPT in various occasions, e.g. debugging for my university assignments, leetcode practices when I get lost, simple tasks like writing emails or formatting documents (like I used ChatGPT to help me draft my markdown reflection for some of the onboarding tasks), interview preperation and counselling (not professional but it is helpful).
+I have used ChatGPT in various occasions, e.g. debugging for my university assignments, leetcode practices when I get lost, simple tasks like writing emails or formatting documents (like I used ChatGPT to help me draft my markdown reflection for some of the onboarding tasks), interview preparation and counselling (not professional but it is helpful).
 
 <img width="1141" alt="Screenshot 2025-06-11 at 6 28 13 pm" src="https://github.com/user-attachments/assets/1d890c0d-1ffa-412b-8732-4cce7b7002ce" />
 Testing out using Copilot to generate a code snippet and try to use it to debug.
@@ -16,7 +16,7 @@ using Copilot to do code review and debug
 
 ## What worked well? What didn’t?
 
-I am keen to utilise Copilot in my internship, and I am aware that, using AI for coding, it is important to understand the programming language, its syntax and the algorithms before using AI to facilitate. In the case when I use ChatGPT for coding, I realise that the solutions provided by ChatGPT (espcailly for leetcode questions or assginments) are usually not the most efficient (long runtime or required more memory). It also provides incorrect codes or codes that cannot be compiled.
+I am keen to utilise Copilot in my internship, and I am aware that, using AI for coding, it is important to understand the programming language, its syntax and the algorithms before using AI to facilitate. In the case when I use ChatGPT for coding, I realise that the solutions provided by ChatGPT (espcailly for leetcode questions or assignments) are usually not the most efficient (long runtime or required more memory). It also provides incorrect codes or codes that cannot be compiled.
 
 On the other hand, I noticed that AI tools like ChatGPT can be useful if I already have an algorithm (for what I would like to code) in mind, it could help with clarifying the structure of the algorithms or the steps to take to achieve a solution. It could also point out the logic flaws sometimes. I think GitHub Copilot can be so powerful when you try to write out the algorithm it can help you complete the lines. It definitely saves a lot of time to complete the code.
 

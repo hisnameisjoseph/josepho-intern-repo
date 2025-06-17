@@ -21,5 +21,5 @@ Git couldn’t automatically decide which version to keep since both branches mo
 - I noticed that once I commitd the changes, both branch now has the same file content on GitHub, I can even choose to delete the other branch that is conflicted with the main branch.
 - I believe merge conflicts usually happen when multiple branches modify the same file (especially the same lines).
 - Git clearly marks the conflict and allows manual intervention to resolve it (or Copilot can help check the conflict as I noticed on GitHub).
-- Resolving conflicts requires understanding the intention of each change, I believe it would be great if there's comments in the files (especially if it is a code file) to understnad the whole context or how algorithms work in those files to see how to edit and merge them together.
+- Resolving conflicts requires understanding the intention of each change, I believe it would be great if there's comments in the files (especially if it is a code file) to understand the whole context or how algorithms work in those files to see how to edit and merge them together.
 - It’s important to communicate with teammates during real projects to prevent or resolve conflicts effectively.

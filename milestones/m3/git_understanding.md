@@ -166,12 +166,12 @@ In short: `git bisect` saves a huge amount of time and reduces human error when 
   - **Use case**: While debugging, check which commit or developer introduced a specific line that might be causing an issue.
 
 #### Experiment with each command in your test repo
-Here I modified the md file (this file) on my local device. Then I used `git checkout` command to retore the file from the main branch.
+Here I modified the md file (this file) on my local device. Then I used `git checkout` command to restore the file from the main branch.
 
 - `git checkout main -- <file>`
   - I created a new branch called `experiment` and made multiple commits.
   - Steps I Took
-    - used a differnt branch for testing out git command
+    - used a different branch for testing out git command
       <img width="1000" alt="Image" src="https://github.com/user-attachments/assets/6991d1e1-7dd9-49b4-9318-945953992135" /> 
     - succencefully use `git checkout main --<file>` command to retrieve the original file (last commit to main) from the main branch.
       <img width="1000" alt="Image" src="https://github.com/user-attachments/assets/4a177afa-f893-427b-9db7-c2d6fd8062fd" /> 
@@ -201,7 +201,7 @@ Here I modified the md file (this file) on my local device. Then I used `git che
   ![Past changes via using `git blame`](<Screenshot 2025-06-16 at 3.55.13 pm-1.png>)
 
 ### When would you use it in a real project (hint: these are all really important in long running projects with multiple developers)?
-I think these commands will be really helpful for project management work, espcailly for debugging, like if a commit is bad and they want to retrive the previous commit from other branches, thery can use `git blame` to see the modification, use `git log` to view the commits and changes, based on the commit message... and then select the right commit from another branch by using `git checkout` to restore the file or use `git cherry-pick`for merging a speecific commit. I believe these commands help promote safe practices for debugging, rollback, and selective merging, especially in larger projects where multiple people are contributing and frequent merges happen.
+I think these commands will be really helpful for project management work, espcailly for debugging, like if a commit is bad and they want to retrieve the previous commit from other branches, thery can use `git blame` to see the modification, use `git log` to view the commits and changes, based on the commit message... and then select the right commit from another branch by using `git checkout` to restore the file or use `git cherry-pick`for merging a speecific commit. I believe these commands help promote safe practices for debugging, rollback, and selective merging, especially in larger projects where multiple people are contributing and frequent merges happen.
 ### What surprised you while testing these commands?
 I was already familiar with `git log` and `git blame`, but testing `git cherry-pick` was quite interesting. The name itself caught my attention, and I found it very useful for selectively applying changes without needing to merge an entire branch. This is something I hadn't encountered in my previous solo projects or university work, but I can see how valuable it is for real-world team collaboration, particularly for fixing bugs (e.g. hotfixes) or pulling in isolated changes.
 
@@ -265,7 +265,7 @@ I have been using these two commands a lot during my internship (adding files, r
   - Avoid accidentally committing unrelated edits.
 - Helps us keep clean and meaningful commit history.
 
-### 🔎 When would you want to stage changes without comitting?
+### 🔎 When would you want to stage changes without committing?
 Sometimes I make multiple changes but want to commit them separately. Staging allows me to control exactly which files or changes to include in a commit. It also helps me review what will be committed before finalising it. This is helpful for keeping my commits clean and focused, especially when working on different parts of a file or multiple issues at once.
 
 ### My Experiment & Workflow

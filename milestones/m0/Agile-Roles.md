@@ -7,7 +7,7 @@ and I am working on completing the assigned issues.
 I would love to contribute to the Agile process by breaking work into smaller tasks, participating in team discussions, 
 and support improvements that align with project's sprint goals when required.
 
-🤝 During onboarding, I reached out to Jeremy to clarify an issue related to Focus Bear ID (one of the onboarding issues) as well as other information like "when, where and how" I can work and survive the internship. His response helped me understand how the team configures (their workstyle, working environment. He also invited me to an Mobile team meeting to see how a team functions and I learn a lot (I chatted with the memebers after the meeting) in terms of the culture and connections between members. This interaction showed me how important it is to ask early and stay unblocked. Overal experience has been pretty good so far.
+🤝 During onboarding, I reached out to Jeremy to clarify an issue related to Focus Bear ID (one of the onboarding issues) as well as other information like "when, where and how" I can work and survive the internship. His response helped me understand how the team configures (their workstyle, working environment. He also invited me to an Mobile team meeting to see how a team functions and I learn a lot (I chatted with the members after the meeting) in terms of the culture and connections between members. This interaction showed me how important it is to ask early and stay unblocked. Overall experience has been pretty good so far.
 
 
 ### How do your responsibilities overlap or interact with other roles in the team?

@@ -1,7 +1,7 @@
 ## Kanban workflow
 
 ### How does Kanban help manage priorities and avoid overload?
-Clear progress like which task to work on (can assign tasks and tag users), limit WIP to avoid overload. Clear priorities by dividing the tasks into differnt stages.
+Clear progress like which task to work on (can assign tasks and tag users), limit WIP to avoid overload. Clear priorities by dividing the tasks into different stages.
 Making sure the priorities are clear by listing down the tasks with due dates.
 Can focus on the task that I should be working on by limiting Work In Progress.
 

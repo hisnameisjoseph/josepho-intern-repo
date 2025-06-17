@@ -1,7 +1,7 @@
 # Learning Goals
 
 ## What do you hope to learn from this internship?
-### Real-world expereince with frameworks that are currently being used in the industry. 
+### Real-world experience with frameworks that are currently being used in the industry. 
 
 - Gain real-world backend development / DevOps experience using industry-standard frameworks (e.g. NestJS, Typescript, AWS, Docker, Infrastructure as Code).
 -	Learn how backend systems are structured in a production environment, not just theory but practical application (code reviews, deployments, CI/CD, version control, etc).

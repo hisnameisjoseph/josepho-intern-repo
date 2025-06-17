@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run lint-md || echo "Markdown linting failed, but continuing with commit."
+npm run spell-check || echo "Spell check failed, but continuing with commit."

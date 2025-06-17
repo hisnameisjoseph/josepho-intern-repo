@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "cspell": "^9.1.1",
+    "husky": "^9.1.7",
+    "markdownlint-cli": "^0.45.0"
+  },
+  "scripts": {
+    "lint-md": "markdownlint '**/*.md'",
+    "spell-check": "cspell '**/*.md'"
+  }
+}

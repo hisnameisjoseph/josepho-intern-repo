@@ -4,7 +4,7 @@
 - strong password
 - MFA for strict access
 - be aware of phishing attack
-- Any other apporach that can compromise the integrity of the security of data - make sure only access or store sensitive data when necessary and through authorised tools. 
+- Any other approach that can compromise the integrity of the security of data - make sure only access or store sensitive data when necessary and through authorised tools. 
 
 ### How should you store, share, and dispose of sensitive information safely?
 - encryption (e.g. AES), access control, secured channels (like SFTP) for sharing data, secure deletion of the digital file or hard drive destruction in some of the cases.
@@ -29,7 +29,7 @@ Additional information:
 
 ## A short personal story or real example of how you avoided a security issue or used a best practice at work or school in the past, and how you’ll apply it at Focus Bear
 
-Since I have limited expereince in working with the industry, I do not have many stories or examples that is fully-related to this question. However, I do have an industrial project with Canberra Health Services (Canberra Hospital) where we were developing an time-tracking software system for their clinical trial unit. Through out the project, our client provided dummy data (instead of actual trials that have been worked on) to us for us to test the system in the later stages to avoid any security issues as many trials (which has patients involved) should not be disclosed to us. I understand that my role as a back-end developer intern could potentially need to handle sensitive / personal data. I have already made it a habit to:
+Since I have limited experience in working with the industry, I do not have many stories or examples that is fully-related to this question. However, I do have an industrial project with Canberra Health Services (Canberra Hospital) where we were developing an time-tracking software system for their clinical trial unit. Through out the project, our client provided dummy data (instead of actual trials that have been worked on) to us for us to test the system in the later stages to avoid any security issues as many trials (which has patients involved) should not be disclosed to us. I understand that my role as a back-end developer intern could potentially need to handle sensitive / personal data. I have already made it a habit to:
 - make sure the data can only be accessed by individuals who are authorised to access
 - never upload anything to GitHub that includes user info or internal documents, espcailly in a public repo
-- protect my work enviroment (laptop, account access) by setting MFA and log out when I am not using the device if necessary.
+- protect my work environment (laptop, account access) by setting MFA and log out when I am not using the device if necessary.

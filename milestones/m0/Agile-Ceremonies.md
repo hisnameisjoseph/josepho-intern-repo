@@ -2,7 +2,7 @@
 
 ### How do Agile ceremonies help with communication and alignment?
 Clear and visualised prioritisation of tasks, timeline and expectations.
-Work load and capacity can be adjusted (e.g. estimated efforts), improvement and feedback can be addressed (for continuous improvment and create positive work environment within the team).
+Work load and capacity can be adjusted (e.g. estimated efforts), improvement and feedback can be addressed (for continuous improvement and create positive work environment within the team).
 Feedback loop can encourage communication, reduce misalignment and ensure the information and expectations are clear and transparent. 
 
 ### Which ceremony do you think is most important for your role, and why?

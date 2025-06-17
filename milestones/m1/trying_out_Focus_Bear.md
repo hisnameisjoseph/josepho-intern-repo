@@ -63,7 +63,7 @@ The “Pause Blocking” button exits the app and restarts it, ending the sessio
 ## 🧠 Reflection Questions
 
 **1. First Impression:**  
-The app has a clear productivity focus, I love the idea of incorperating routines with the app.
+The app has a clear productivity focus, I love the idea of incorporating routines with the app.
 
 **2. Difficult to Understand:**  
 The distinction between strict and super strict modes, and the inconsistent behavior of the "pause blocking" button, were unclear.
