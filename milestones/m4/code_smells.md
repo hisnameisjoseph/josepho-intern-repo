@@ -51,7 +51,7 @@
 
 ### 💡 What code smells did you find in your code?
 
-To practise identifying code smells, I generated an intentionally messy `userManager.ts` file using ChatGPT. The code exhibited several classic code smells:
+To practice identifying code smells, I generated an intentionally messy `userManager.ts` file using ChatGPT. The code exhibited several classic code smells:
 
 - **God Class**: The class `A` handled multiple unrelated responsibilities—data storage, user sanitisation, sending emails, and logging.
 - **Long Method**: The `doEverything()` method combined several tasks, making the logic difficult to follow and maintain.
