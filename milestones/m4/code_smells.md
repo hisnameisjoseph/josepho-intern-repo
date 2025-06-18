@@ -47,3 +47,16 @@
    - _Examples_:
      - `get_user()`, `fetchUserData()`, and `retrieveUser()` used for similar purposes.
      - `temp`, `data`, `info` used generically across unrelated contexts.
+
+
+### What code smells did you find in your code?
+
+### How did refactoring improve the readability and maintainability of the code?
+
+### How can avoiding code smells make future debugging easier?
+Avoiding code smells ensures that the codebase remains clean, consistent, and easier to reason about. This helps during debugging because:
+- There’s less confusion from outdated or irrelevant code.
+- Well-named functions and variables make it clearer where a bug might be coming from.
+- Smaller, focused functions isolate logic better, making it easier to pinpoint where something is going wrong.
+
+Overall, keeping code free from smells leads to fewer misunderstandings and faster debugging.
