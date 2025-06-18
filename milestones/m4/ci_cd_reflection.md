@@ -20,7 +20,7 @@ CI/CD is a set of practices that enable development teams to deliver code change
     - I ran the spell-check and the screenshot below is the result. As you can see, there are some spelling errors in the markdown files.
         ![spell-check result](<Screenshot 2025-06-17 at 3.12.02 pm.png>)
     - I also used the `codespell -w` command to automatically fix some of the spelling errors, but I still need to manually fix some of them.
-      - I noticed that some of the spelling errors were fixed, but the codespell command accidently edited some of the words in node_modules, which I had to revert by using `git checkout -- .` command that I learned in the previous milestone.
+      - I noticed that some of the spelling errors were fixed, but the codespell command accidentally edited some of the words in node_modules, which I had to revert by using `git checkout -- .` command that I learned in the previous milestone.
     - And I ran the markdownlint and the result is shown below. I further analysed the terminal messages and understood the rules code:
         ```
             MD026 | Remove trailing : in headings
