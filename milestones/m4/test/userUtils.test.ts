@@ -58,4 +58,15 @@ describe('formatUser', () => {
   it('returns correct formatting with no mask flag explicitly passed', () => {
     expect(formatUser(user1, false)).toBe('Jane Doe <jane.doe@example.com>');
   });
+  it('returns "Invalid user" when user is null', () => {
+  expect(formatUser(null as unknown as User)).toBe('Invalid user');
+  });
+  it('returns "Missing name" when first or last name is missing', () => {
+    const userWithMissingName = {
+      firstName: '',
+      lastName: '',
+      email: 'someone@example.com'
+    } as User;
+    expect(formatUser(userWithMissingName)).toBe('Missing name');
+  });
 });
