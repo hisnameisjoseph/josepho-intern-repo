@@ -3,7 +3,7 @@
 ### What do you think are the biggest benefits and challenges of Agile?
 - Benefits: Fixed-length sprint for planned, feature-based work (iterative approach). Better for predictability. Promote collaborations and transparency
 - by regular check-ins and retrospectives. 
-- Challenges: Flexibility, difficult to implement for small projects that have less peopple involved (for appointing Scrum master or Product Owner).
+- Challenges: Flexibility, difficult to implement for small projects that have less people involved (for appointing Scrum master or Product Owner).
 - Require strong team communication, and the potential of [**scope creep**](https://www.geeksforgeeks.org/business-studies/what-is-scope-creep-in-project-management/)
 - if deliverables are unclear or not prioritised correctly.
 
