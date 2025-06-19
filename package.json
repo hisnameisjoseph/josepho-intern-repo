@@ -1,8 +1,12 @@
 {
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "cspell": "^9.1.1",
     "husky": "^9.1.7",
-    "markdownlint-cli": "^0.45.0"
+    "jest": "^30.0.1",
+    "markdownlint-cli": "^0.45.0",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
   },
   "scripts": {
     "lint-md": "markdownlint '**/*.md' '!node_modules'",
