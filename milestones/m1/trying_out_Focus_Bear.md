@@ -46,7 +46,7 @@ Focus Bear frequently prompts users to confirm access for familiar websites like
 **Problem:**  
 Super Strict Mode blocks unfamiliar sites completely—even when "I need to use this" is clicked. This caused data loss while editing an unsaved GitHub markdown file. For example, Focus Bear refreshed the tab and erased the content due to blocking, making it unreliable for work on non-auto-saving sites.
 
-E.g. For this markdown file, I first wrote it with simple md style with my thoguhts, but then once I turned on super strict mode, it blocked the access (didn't let me to go back) and when I go back after the time the file is gone (because I didn't commit it and GitHub didn't auto-save).
+E.g. For this markdown file, I first wrote it with simple md style with my thoughts, but then once I turned on super strict mode, it blocked the access (didn't let me to go back) and when I go back after the time the file is gone (because I didn't commit it and GitHub didn't auto-save).
 
 ---
 
