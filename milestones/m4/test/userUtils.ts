@@ -17,6 +17,7 @@ export interface User {
  * @param user - User object with firstName, lastName, and optional email
  * @param maskEmail - If true, masks email for privacy
  */
+
 export function formatUser(user: User, maskEmail = false): string {
   // Guard against null, non-object, or incomplete user input
   if (!user || typeof user !== 'object') return 'Invalid user';

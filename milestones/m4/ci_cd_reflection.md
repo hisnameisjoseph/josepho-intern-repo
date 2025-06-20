@@ -1,6 +1,6 @@
 # CI/CD
 
-### What is CI/CD?
+## What is CI/CD?
 - CI: Continuous Integration
     - Automatically run tests/checks on every new code push or PR.
     - It helps to prevent integration problems, allowing teams to develop cohesive software more rapidly.
@@ -10,7 +10,7 @@
 
 CI/CD is a set of practices that enable development teams to deliver code changes more frequently and reliably. It reduce the manual work and automatically test and deploy code changes, ensuring that software is always in a releasable state.
 
-### Set up CI/CD pipeline
+## Set up CI/CD pipeline
 - I use GitHub Actions to set up CI/CD pipeline.
 - I install mardkdownlint and cspell locally to lint my markdown files and check spelling.
     ```bash
@@ -22,7 +22,7 @@ CI/CD is a set of practices that enable development teams to deliver code change
     - I also used the `codespell -w` command to automatically fix some of the spelling errors, but I still need to manually fix some of them.
       - I noticed that some of the spelling errors were fixed, but the codespell command accidentally edited some of the words in node_modules, which I had to revert by using `git checkout -- .` command that I learned in the previous milestone.
     - And I ran the markdownlint and the result is shown below. I further analysed the terminal messages and understood the rules code:
-        ```
+        ```md
             MD026 | Remove trailing : in headings
             MD041 | Change first heading to level 1 (#)
             MD025 | Only one # heading per file
@@ -68,7 +68,7 @@ CI/CD is a set of practices that enable development teams to deliver code change
     ```
   - I believe this workflow can run checks on every pull request to the main branch, ensuring that all markdown files are linted and spell-checked before merging.
 
-### Husky
+## Husky
 - I also set up Husky to run the linting and spell-checking commands before committing code changes (~/.husky).
   - Husky is a tool that allows you to create Git hooks, which are scripts that run at certain points in the Git workflow.
   - The screenshot shows how I set up Husky to run the linting and spell-checking commands before committing code changes.
@@ -86,7 +86,7 @@ CI/CD is a set of practices that enable development teams to deliver code change
       npm run spell-check || echo "Spell check failed, but continuing with commit."
       ```
 
-
+## Reflection Questions
 ### What is the purpose of CI/CD?
 
 The purpose of CI/CD (Continuous Integration and Continuous Deployment) is to automate the process of integrating code changes, running tests, and deploying applications. 

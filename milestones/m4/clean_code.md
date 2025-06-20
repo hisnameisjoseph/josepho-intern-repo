@@ -1,4 +1,5 @@
-# Clean Code Principles:
+# Clean Code Principles, Formatting, and Testing
+## Clean Code Principles:
 🧠 What Is Clean Code?
 
 Clean code is code that is easy to read, understand and change. Writing clean code isn’t just about aesthetics — it’s about writing code that works well for both machines and humans.
@@ -58,9 +59,30 @@ In the refactored version, the code is clearer and easier to understand:
 - Error handling is added for invalid operators and division by zero, making the function more robust.
 - JSDoc comments explain the function's purpose, parameters, and return value, improving documentation.
 
+## Code Formatting & Style Guides
+Code formatting improves readability, reduces misunderstandings, and helps teams collaborate more effectively. Consistent style also makes it easier to spot bugs and understand unfamiliar code.
 
+I reviewed the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) and the [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html) to understand common formatting practices. Here are some key takeaways:
 
-# Clean Code Testing
+### 📏 Airbnb JavaScript Style Guide
+- Modern ES6+ preferences: Use const/let, arrow functions, template literals, destructuring, default parameters—this keeps code concise and safe
+- Destructuring: Prefer extracting properties from objects/arrays ⇒ cleaner and less repetitive code
+- Consistent spacing and formatting: Spaces around operators (e.g. x = y + 5), no semicolons misuse, indent chained calls – keeps code readable
+- No arguments, no param reassign: Use rest (...args) and never change function params – avoids ambiguity and hidden bugs
+
+### 📝 Google TypeScript Style Guide
+- Naming conventions:
+    - PascalCase for classes/types/interfaces.
+    - lowerCamelCase for variables/functions.
+	- CONSTANT_CASE for global constants.
+- File structure:
+	- Order: optional copyright → @fileoverview → imports → code, each separated by blank lines.
+- Prefer named imports/exports: Avoid default exports – clearer and safer for tooling.
+- ESLint/Prettier enforcement: These guidelines are meant to be enforced automatically for consistency.
+
+I followed the instructions in issue #62, I installed ESLint and Prettier in this development environment. 
+
+## Clean Code Testing
 ### How do unit tests help keep code clean?
 
 Writing unit tests for `formatUser` function `from test/userUtils.ts` helped clarify the function’s intended behaviour and made the code easier to reason about. Based on my own experience writing and running these tests, here’s how they improved the code:
@@ -124,7 +146,7 @@ and they passed successfully, as shown in the screenshot below:
 ![Test for running jest](<Screenshot 2025-06-19 at 3.08.50 pm.png>)
 
 
-# Error Handling & Gaurd Clauses
+## Error Handling & Gaurd Clauses
 
 - **Error handling**: preventing your app from crashing or behaving unpredictably when things go wrong.
 - **Guard clauses** early return conditions to handle invalid input or stop execution early.
@@ -149,7 +171,7 @@ if (!user.firstName || !user.lastName) return 'Missing name';
 So that it checks for invalid input like not having a user object or missing names. This prevents errors later on.  This not only made the function safer but also improved readability by reducing unnecessary nesting.
 
 
-# Commenting & Documentation
+## Commenting & Documentation
 
 I asked myself, "How can I make my code easier to understand for others (and myself in the future)?"
 What are some of the best practices for writing comments and documentation? Besides the practices that I have already done in previous issues and experiences, I found these tips helpful:

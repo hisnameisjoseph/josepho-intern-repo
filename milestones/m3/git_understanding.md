@@ -1,9 +1,7 @@
-# Git Understanding - Pull Request
+# Git Understanding
+## Git Understanding - Pull Request
 
 The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/projects/5/views/1?pane=issue&itemId=113330214&issue=hisnameisjoseph%7Cjosepho-intern-repo%7C60) exercise:  ➡️ [PR #78](https://github.com/hisnameisjoseph/josepho-intern-repo/pull/78)
-
-
-## 🔎 Reflection
 
 ### Why are PRs important in a team workflow?
 - Ensure code quality through peer review.
@@ -27,7 +25,7 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 
 ---
 
-## 🔎 Open-Source PR Reviewed
+### 🔎 Open-Source PR Reviewed
 
 - **Repository:** [facebook/react](https://github.com/facebook/react)
 - **Pull Request:** [#32099 - Fix crash caused by layout effects without update queue](https://github.com/facebook/react/pull/32099)
@@ -72,25 +70,23 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 [facebook/react PR #32099](https://github.com/facebook/react/pull/32099)
 
 
----
+## Git Understanding - Git Messages:
 
-# Git Understanding - Git Messages:
-
-## What makes a good commit message?
+### What makes a good commit message?
 
 - Well-structured and easy to read.
 - Succinct and concise.
 - Describes **what** was changed and **why**.
 - Follows conventional formatting (e.g. `fix:`, `feat:`, `refactor:`).
 
-## How does a clear commit message help in team collaboration?
+### How does a clear commit message help in team collaboration?
 
 - Makes it easy for others (and future me) to understand changes quickly.
 - Reduces confusion during code reviews or debugging.
 - Improves workflow efficiency and team productivity.
 - Helps in generating changelogs or release notes automatically.
 
-## How can poor commit messages cause issues later?
+### How can poor commit messages cause issues later?
 
 - Difficult to trace the origin of bugs or issues.
 - Wastes time trying to figure out what a change was intended to do.
@@ -106,15 +102,13 @@ The PR that I created for [issue 60](https://github.com/users/hisnameisjoseph/pr
 - [Well-Structured Commit Message](https://github.com/hisnameisjoseph/josepho-intern-repo/commit/d8ea16b26a0450bcfc4424275ed32ef90ebaf034)
 
 
---- 
+## Git Bisect
 
-# Git Bisect
-
-## What does `git bisect` do?
+### What does `git bisect` do?
 
 `git bisect` is a Git tool that helps identify which commit introduced a bug. It uses a binary search approach — you mark one commit as "good" and another as "bad" to narrow down the commits that need to be checked. Git continues narrowing down the commit range until it finds the exact commit where the issue was introduced.
 
-## When would you use it in a real-world debugging situation?
+### When would you use it in a real-world debugging situation?
 
 I would use `git bisect` when:
 
@@ -126,7 +120,7 @@ I would use `git bisect` when:
 **Example:**  
 In my calculator.ts file (in practice folder), I accidentally introduced a bug into the `divide()` function by not handling division by zero. Using `git bisect` in my local Terminal, I was able to quickly find that the bug was introduced in commit [`349bfff`](349bfffc8c9ca26e59087ffe216735e147baf1e0) when I added the `power()` function and made changes to `divide()`.
 
-## How does it compare to manually reviewing commits?
+### How does it compare to manually reviewing commits?
 
 | Git Bisect            | Manual Commit Review  |
 |-----------------------|-----------------------|
@@ -137,9 +131,7 @@ In my calculator.ts file (in practice folder), I accidentally introduced a bug i
 
 In short: `git bisect` saves a huge amount of time and reduces human error when debugging issues that may have been introduced several commits ago.
 
-
----
-# Git Understanding - Advacned Git Commands
+## Git Understanding - Advacned Git Commands
 
 ### What does each command do?
 
@@ -165,7 +157,7 @@ In short: `git bisect` saves a huge amount of time and reduces human error when 
   - Show who last modified each line in a file and when.
   - **Use case**: While debugging, check which commit or developer introduced a specific line that might be causing an issue.
 
-#### Experiment with each command in your test repo
+### Experiment with each command in your test repo
 Here I modified the md file (this file) on my local device. Then I used `git checkout` command to restore the file from the main branch.
 
 - `git checkout main -- <file>`
@@ -205,8 +197,8 @@ I think these commands will be really helpful for project management work, espca
 ### What surprised you while testing these commands?
 I was already familiar with `git log` and `git blame`, but testing `git cherry-pick` was quite interesting. The name itself caught my attention, and I found it very useful for selectively applying changes without needing to merge an entire branch. This is something I hadn't encountered in my previous solo projects or university work, but I can see how valuable it is for real-world team collaboration, particularly for fixing bugs (e.g. hotfixes) or pulling in isolated changes.
 
----
-# Git Understanding - Branching & Team Collaboration
+
+## Git Understanding - Branching & Team Collaboration
 
 For this issue, I created a new branch called `issue_55` branch. I worked locally on my VS Code for this branch and follow the instructions from issue #55 to recreate the scenario.
 - I made sure I push the branch with the commits I have got with the command line: `git push --set-upstream origin issue_55`
@@ -241,9 +233,7 @@ This highlights the importance of:
 - Frequent syncing with main
 - Keeping branches up to date to reduce merge conflicts.
 
----
-
-# Git Understanding - Staging vs Committing
+## Git Understanding - Staging vs Committing
 
 ### 🔎 What is the difference between staging and committing?
 - **Staging (git add)**:  

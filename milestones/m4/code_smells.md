@@ -1,7 +1,7 @@
-# Identifying & Fixing Code Smells
+# Code Smells
+Code smells are indicators of potential issues in the code that may not necessarily be bugs but can lead to problems in the future. Fixing the code smells is crucial for maintaining a healthy codebase.
 
-### Code smells are indicators of potential issues in the code that may not necessarily be bugs but can lead to problems in the future. Fixing the code smells is crucial for maintaining a healthy codebase.
-
+## Identifying & Fixing Code Smells
 ### Common Code Smells and Examples
 
 1. **Magic Numbers & Strings**

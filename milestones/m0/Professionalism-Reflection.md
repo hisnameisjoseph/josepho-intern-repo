@@ -12,7 +12,7 @@ None of my past experiences was perfect, especially when it comes to the definit
   - On top of that, I played the role of someone who often evaluated others’ work and gave feedback based on clarity and structure (Project coordinator / evaluator). Even though I wasn’t the loudest in the group, my teammates respected that I preferred to speak once I had thought things through, and that mutual understanding helped build trust. It showed me that great teamwork isn’t about being perfect—it’s about adapting, showing respect, and being accountable.
 
 ### What steps can you take to make sure your communication is clear, respectful, and inclusive?
-- wording, tone in messages, use tools like Grammerly or ChatGPT to double check the tone and format for documentation and emails, maybe pronouns in emails and regulary check-up on team members would be great?.
+- wording, tone in messages, use tools like Grammarly or ChatGPT to double check the tone and format for documentation and emails, maybe pronouns in emails and regulary check-up on team members would be great?.
 - double-check my wording and tone, especially for written messages. I will use tools like Grammarly or ChatGPT to make sure my tone is professional and respectful.
 - I will be mindful of how I phrase feedback—focusing on the task, not the person.
 - At Focus Bear, I also plan to use pronouns in my email signature and check in on quieter teammates though out my internship, because I know how it feels to be overlooked when you’re processing internally.
