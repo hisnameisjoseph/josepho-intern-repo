@@ -229,6 +229,117 @@ Poorly named variables (e.g., temp, data1, a) make code harder to read, debug, a
 In my simple example, I refactored a vague function (d) and its parameters (a, b, c) into clearer names like addTwoNumbers, firstNumber, and sum. This small change made the purpose of the code obvious at a glance. It also reminded me how naming is a key part of clean code — good names act like documentation and help other developers (and my future self) quickly understand the logic.
 
 
+## Writing Small, Focused Functions
+
+### Research best practices for writing small, single-purpose functions.
+From my expereince and research on clean code, I found that writing small, focused functions is a key principle for maintainable code. Here are some best practices:
+- **Single Responsibility Principle**: Each function should **do one thing** and **do it well**. This makes it easier to understand, test, and reuse.
+- **Descriptive Names**: Use clear, descriptive names that indicate what the function does. Avoid generic names like `doSomething` or `processData`.
+- **Short Functions**: Aim for functions that fit within a single screen. If a function is too long, consider breaking it up into smaller helper functions.
+- **Avoid Side Effects**: Functions should not modify global state or have hidden dependencies. They should only operate on their input parameters and return a result.
+- **Consistent Return Types**: Functions should return the same type of value consistently. This makes it easier to reason about their behaviour.
+- **Use Parameters Wisely**: Limit the number of parameters to 2-3. If you need more, consider using an object to group related parameters together.
+- **Avoid Deep Nesting**: If a function has too many nested blocks (like if statements), it can become hard to follow. Use early returns or break complex logic into smaller functions to keep the structure flat and readable.
+
+### Find an example of a long, complex function in an existing codebase (or write your own).
+```ts
+function sortUsers(users: { name: string; age: number }[]) {
+  for (let i = 0; i < users.length - 1; i++) {
+    for (let j = i + 1; j < users.length; j++) {
+      if (users[i].name.toLowerCase() > users[j].name.toLowerCase()) {
+        const temp = users[i];
+        users[i] = users[j];
+        users[j] = temp;
+      }
+    }
+  }
+
+  for (let i = 0; i < users.length; i++) {
+    users[i].name = users[i].name.trim();
+    users[i].name = users[i].name.charAt(0).toUpperCase() + users[i].name.slice(1);
+  }
+
+  console.log("Sorted and formatted user list:");
+  console.log(users);
+}
+```
+As you can see, this function does multiple things:
+1. Sorts the users by name.
+2. Trims whitespace from names.
+3. Capitalises the first letter of each name.
+4. Logs the sorted list to the console.
+With nested for loops and multiple responsibilities, it’s complex and hard to read.
+
+### Refactor it into multiple smaller functions with clear responsibilities.
+```ts
+// Define a type for user objects to ensure consistent structure
+type User = { name: string; age: number };
+
+/**
+ * Cleans up and capitalises a user's name.
+ * Trims whitespace and ensures the first letter is uppercase,
+ * while the rest is lowercase (e.g. "  alice " → "Alice").
+ */
+function normalizeName(name: string): string {
+  const trimmed = name.trim();
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase();
+}
+
+/**
+ * Returns a new array of users sorted alphabetically by name.
+ * Uses a case-insensitive comparison for consistent sorting.
+ */
+function sortUsersByName(users: User[]): User[] {
+  return users.slice().sort((a, b) =>
+    a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+  );
+}
+
+/**
+ * Returns a new array of users with their names normalised.
+ * Uses `normalizeName` to improve data consistency and display quality.
+ */
+function formatUsers(users: User[]): User[] {
+  return users.map(user => ({
+    ...user,
+    name: normalizeName(user.name),
+  }));
+}
+
+/**
+ * Logs the final list of users to the console.
+ * Separated into its own function for clarity and reuse.
+ */
+function displayUsers(users: User[]): void {
+  console.log("Sorted and formatted user list:");
+  console.log(users);
+}
+
+/**
+ * Main function that processes a list of users.
+ * Applies sorting, formatting, and then displays the result.
+ * Keeps each step modular and easy to test or extend.
+ */
+function processUsers(users: User[]): void {
+  const sorted = sortUsersByName(users);
+  const formatted = formatUsers(sorted);
+  displayUsers(formatted);
+}
+```
+This refactored code breaks down the original nested fucntion into smaller, single-purpose functions with top-level summaries, making it much clearer and easier to maintain:
+- `normalizeName`: Cleans up and capitalises a user's name.
+- `sortUsersByName`: Sorts users by name in a case-insensitive way.
+- `formatUsers`: Applies name normalisation to each user.
+- `displayUsers`: Logs the final list of users.
+- `processUsers`: Main function that orchestrates the sorting, formatting, and displaying of users
+This modular approach allows for easier testing, debugging, and future enhancements. Each function has a clear responsibility, making the codebase cleaner and more maintainable. Obviously, if the functions are easy to read and understand, there is no need to write comments for them.
+
+### Reflections:
+#### Why is breaking down functions beneficial?
+I think it could be beneficial because if we write the functions in a modular way, it makes the code not just easier to read, but also easier to test and maintain. Each function has a single responsibility, so it’s clear what it does without needing to understand the entire codebase. This reduces complexity and makes it easier to spot bugs or add new features later.
+#### How did refactoring improve the structure of the code?
+In the example, refactoring helped create a clear flow of logic. E.g. processUsers orchestrates the entire process, while each smaller function handles a specific task. This makes it easier to follow the code’s purpose and understand how each part contributes to the overall functionality (*"sort, format, display"*). 
+
 ## Clean Code Testing
 ### How do unit tests help keep code clean?
 

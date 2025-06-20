@@ -19,7 +19,7 @@ I think what makes Focus Bear different is the features it offers, cover many as
 I think it would be the features that the app offers. It would be a good deal if users can save money by installing an app (or even use the premium functions) instead of having two or more apps for routine builder, well-being, focus and productivity (e.g. Freedom + Routinery would be around AU86 per year). 
 Easier to manage if features are all-in-one application, and compatibility would be key for users to have seamless experience.
 ## What’s one feature that other apps have that Focus Bear doesn’t?
-From the table, we can see that other apps have Widgets, sync with Calendar and Apple Health for mood tracking (which is related to well-being). Apple also comes with journaling which I believe is related to the wellbeing asepect. 
+From the table, we can see that other apps have Widgets, sync with Calendar and Apple Health for mood tracking (which is related to well-being). Apple also comes with journaling which I believe is related to the wellbeing aspect. 
 Focus sounds are free and available on the Freedom Desktop app.
 Routinery can add friends to check their routines.
 ## Based on your research, what’s one improvement you think Focus Bear could make?

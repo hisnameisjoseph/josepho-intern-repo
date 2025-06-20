@@ -17,6 +17,6 @@ I found myself slouching sometimes, so hopefully the adjustments helped me stay 
 
 ### How can you remind yourself to maintain good posture and take breaks throughout the day? (Hint: Use Focus Bear to schedule movement breaks!)
 
-- Use Focus bear for movement breaks / pomodoro technique or my deep work sessions (20 to 50 min work, 5 to 10 min break), stretch and look 20 feet (6 meters) away during the break.
+- Use Focus bear for movement breaks / Pomodoro technique or my deep work sessions (20 to 50 min work, 5 to 10 min break), stretch and look 20 feet (6 meters) away during the break.
 - In addition, I use my iPhone’s screen distance alert (part of Screen Time settings) to stop myself from holding the phone too close during breaks.
 After a few days of following these reminders, I noticed I felt less neck tension in the evenings, and my focus during work blocks improved.
