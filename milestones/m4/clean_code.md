@@ -340,7 +340,45 @@ I think it could be beneficial because if we write the functions in a modular wa
 #### How did refactoring improve the structure of the code?
 In the example, refactoring helped create a clear flow of logic. E.g. processUsers orchestrates the entire process, while each smaller function handles a specific task. This makes it easier to follow the code’s purpose and understand how each part contributes to the overall functionality (*"sort, format, display"*). 
 
-## Clean Code Testing
+## Avoiding Code Duplication
+
+### DRY (Don't Repeat Yourself)
+A principle that encourages reducing duplication in code. It helps keep code clean, maintainable, and less error-prone. Here are some best practices for avoiding code duplication:
+- **Extract Common Logic**: If you find yourself repeating the same code in multiple places, extract it into a separate function or module. This way, you only need to change it in one place if it needs updating.
+- **Use Higher-Order Functions**: If you have similar operations on different data types, consider using higher-order functions that take callbacks or configuration options. This allows you to reuse the same logic with different behaviours.
+- **Modular Design**: Break your code into smaller, reusable modules or components. This not only reduces duplication but also makes it easier to test and maintain.
+- **Configuration Over Hardcoding**: Instead of hardcoding values, use configuration files or parameters to make your code more flexible. This allows you to change behaviour without duplicating code.
+- **Use Libraries and Frameworks**: Leverage existing libraries or frameworks that provide common functionality. This reduces the need to reinvent the wheel and helps you avoid duplicating code that has already been written and tested by others.
+
+Articles I found helpful:
+- [Wiki - Don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+- [DRY - Articles from LinkedIn](https://www.linkedin.com/pulse/understanding-dry-principle-what-why-matters-how-can-help-harsh-shah/)
+
+### Find a section of code in your test repo with unnecessary repetition.
+I couldn't find any unnecessary repetition in my codebase, so I wrote a simple example of typescript code that has unnecessary repetition in the test repo called `emailService.ts`. 
+
+The code:
+```ts
+console.log(`Email to ${user.email}: ${subject}\n${message}`);
+```
+has been repeated multiple times in the codebase, which is unnecessary and violates the DRY principle.
+
+### Refactor the code to eliminate duplication.
+I refactored the code by creating a helper function called `sendEmail` that takes the user, subject, and message as parameters. This function handles the email sending logic, so I can reuse it instead of repeating the same code multiple times. The refactored file is called `emailServiceRefactored.ts` which is in the same directory as `emailService.ts` in the test repo. Code snippet below:
+```ts
+function sendEmail(user: User, subject: string, message: string) {
+  console.log(`Email to ${user.email}: ${subject}\n${message}`);
+}
+```
+In this case, the helper function is also one line long, but it can be extended in the future if needed. This way, I can easily change the email sending logic in one place without having to update multiple lines of code.
+
+### Reflection:
+#### What were the issues with duplicated code?
+As I mentioned, the issues with duplicated code was that it was unnecessary and violated the DRY principle. The same `console.log` logic was repeated. If I needed to change the email sending logic, I would have to update it in multiple places, which is error-prone and makes the code harder to maintain. It also makes the code less readable, as it adds noise and makes it harder to see the overall structure.
+#### How did refactoring improve maintainability?
+By extracting the email sending logic into a separate function `sendEmail`, I now only need to update one place if the behaviour changes. The DRY principle would be easily considered as more effective in larger codebases (might not be the case in this simple single line example). I believe it is a good practice to follow. 
+
+## Clean Code & Unit Testing
 ### How do unit tests help keep code clean?
 
 Writing unit tests for `formatUser` function `from test/userUtils.ts` helped clarify the function’s intended behaviour and made the code easier to reason about. Based on my own experience writing and running these tests, here’s how they improved the code:
