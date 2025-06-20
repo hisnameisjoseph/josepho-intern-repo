@@ -1,4 +1,4 @@
-# Git Knowlege - Git Command Line Tools
+# Git Knowledge - Git Command Line Tools
 My current git version (On my MacBook): 2.39.5 (Apple Git-154)
 
 ## Reflection Questions
