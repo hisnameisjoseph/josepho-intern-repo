@@ -232,7 +232,7 @@ In my simple example, I refactored a vague function (d) and its parameters (a, b
 ## Writing Small, Focused Functions
 
 ### Research best practices for writing small, single-purpose functions.
-From my expereince and research on clean code, I found that writing small, focused functions is a key principle for maintainable code. Here are some best practices:
+From my experience and research on clean code, I found that writing small, focused functions is a key principle for maintainable code. Here are some best practices:
 - **Single Responsibility Principle**: Each function should **do one thing** and **do it well**. This makes it easier to understand, test, and reuse.
 - **Descriptive Names**: Use clear, descriptive names that indicate what the function does. Avoid generic names like `doSomething` or `processData`.
 - **Short Functions**: Aim for functions that fit within a single screen. If a function is too long, consider breaking it up into smaller helper functions.
@@ -326,7 +326,7 @@ function processUsers(users: User[]): void {
   displayUsers(formatted);
 }
 ```
-This refactored code breaks down the original nested fucntion into smaller, single-purpose functions with top-level summaries, making it much clearer and easier to maintain:
+This refactored code breaks down the original nested function into smaller, single-purpose functions with top-level summaries, making it much clearer and easier to maintain:
 - `normalizeName`: Cleans up and capitalises a user's name.
 - `sortUsersByName`: Sorts users by name in a case-insensitive way.
 - `formatUsers`: Applies name normalisation to each user.

@@ -10,7 +10,7 @@ Frequently change passwords (make it as a routine), be cautious of the informati
 Back up devices and update them as often as possible. Secure wifi and connections, install antivirus software when possible. And make sure I lock my devices with strong passwords when I am not using it.
 
 ### What steps will you take to ensure your passwords and accounts are secure?
-As mentioned above, but having additional security features like using biometrics: fingerprint (in-use on my MacBook), Face-ID for my phone can streghthen the security of my devices. 
+As mentioned above, but having additional security features like using biometrics: fingerprint (in-use on my MacBook), Face-ID for my phone can strenghthen the security of my devices. 
 On top of that, I will regularly monitor my account activity to make sure there is no unusual behaviour activity from my accounts. 
 
 ### What would you do if you suspected a security breach or suspicious activity on your account?
