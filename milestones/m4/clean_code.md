@@ -80,7 +80,47 @@ I reviewed the [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascr
 - Prefer named imports/exports: Avoid default exports – clearer and safer for tooling.
 - ESLint/Prettier enforcement: These guidelines are meant to be enforced automatically for consistency.
 
-I followed the instructions in issue #62, I installed ESLint and Prettier in this development environment. 
+I followed the instructions in issue #62, I installed ESLint and Prettier in this development environment.
+![Message in Terminal for installing Eslint](<Screenshot 2025-06-19 at 6.58.40 pm.png>)
+
+### *Troubleshooting ESLint Configuration Issues*
+While attempting to fix ESLint warnings across the codebase, I edited the package.json file to manage dependencies. Unfortunately, this introduced several issues where ESLint could no longer run due to missing or invalid packages (e.g. wrap-ansi-cjs, string-width-cjs, etc.), throwing ETARGET errors during npm install. This broke the entire linting setup and made it impossible to proceed.
+
+I was stuck in this state for a while. Eventually, I resolved it by manually copying the Markdown files I had already fixed (based on ESLint’s output) to a safe location, then reverting the whole repository to the last working git commit. This allowed me to restore a clean dependency setup, reinstall the correct packages, and paste my edited .md files back in. After doing this, I was finally able to run npx eslint again without errors.
+
+This experience taught me the importance of being cautious when modifying package.json, especially when working within a shared or version-controlled project. In future, I’ll make sure to create a backup or branch before making such changes.
+
+### Why is code formatting important?
+Consistent code formatting improves readability and makes collaboration smoother. During this task, I realised how a well-formatted codebase helps quickly identify issues, especially when working across Markdown, TypeScript, and JSON files.
+
+### What issues did the linter detect?
+The linter flagged missing alt text for images, multiple H1 headings, heading level skips in Markdown files, use of any types in TypeScript, and malformed JSON. It also detected style issues like indentation and missing code block languages.
+
+*Originally, I had mutltiple problems with the Markdown files (around 20 problems), and now I have fixed most of them, leaving only 8 problems related to the node packages and a messy ts file (supposed to be messy, as an example) remaining. As shown below:*
+```bash
+(base) hisnameisjoseph@Josephs-MacBook-Pro-14 josepho-intern-repo % npx eslint . --ext .ts,.js
+
+/Users/hisnameisjoseph/Documents/485/Project 485/FocusBear/josepho-intern-repo/milestones/m3/practice/package-lock.json
+  7:5  error  Empty key found  json/no-empty-keys
+
+/Users/hisnameisjoseph/Documents/485/Project 485/FocusBear/josepho-intern-repo/milestones/m3/practice/tsconfig.json
+  3:5  error  Parsing error: Unexpected character '/' found
+
+/Users/hisnameisjoseph/Documents/485/Project 485/FocusBear/josepho-intern-repo/milestones/m4/UserManager.ts
+   5:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   6:9   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  13:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  34:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  41:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/hisnameisjoseph/Documents/485/Project 485/FocusBear/josepho-intern-repo/package-lock.json
+  6:5  error  Empty key found  json/no-empty-keys
+
+✖ 8 problems (8 errors, 0 warnings)
+```
+
+### Did formatting the code make it easier to read?
+Yes, after applying lint fixes, the structure and clarity of the Markdown files improved significantly. It also helped me better understand and clean up problematic areas, especially heading hierarchies and code block consistency.
 
 ## Clean Code Testing
 ### How do unit tests help keep code clean?
