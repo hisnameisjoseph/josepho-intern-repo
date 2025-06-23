@@ -506,7 +506,7 @@ As you can see, the refactored code is much cleaner with better naming conventio
 
 ## Reflection:
 ### What made the original code complex?
-Although I think the original code is not too complex (with readable nested loop), it could be imrproved due to issues like: *mixing multiple responsibilities*, *unclear naming conventions*, *duplicated logic* and *deep nesting*. The structure made it difficult to follow for someone unfamiliar with it, which could be hard to test and maintain.
+Although I think the original code is not too complex (with readable nested loop), it could be improved due to issues like: *mixing multiple responsibilities*, *unclear naming conventions*, *duplicated logic* and *deep nesting*. The structure made it difficult to follow for someone unfamiliar with it, which could be hard to test and maintain.
 
 ### How did refactoring improve it?
 Refactoring improved the code by:

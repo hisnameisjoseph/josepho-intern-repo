@@ -77,10 +77,10 @@ Well, [`docker exec`](https://docs.docker.com/reference/cli/docker/compose/exec/
 👉 *It might be safer to use `docker exec` for debugging, as it allows you to quit (using `Ctrl+C`) without affecting the main process of the container, while `docker attach` can disrupt the main process if you quit.* 👈
 
 #### How do you restart a container without losing data?
-Use the `docker restart <container_name_or_id>` command to restart a container without losing data. This command stops the container and then starts it again, preserving the data stored in volumes or bind mounts. As long as you don't remove the container or its volumnes, the data will remain intact.
+Use the `docker restart <container_name_or_id>` command to restart a container without losing data. This command stops the container and then starts it again, preserving the data stored in volumes or bind mounts. As long as you don't remove the container or its volumes, the data will remain intact.
 
 #### How can you troubleshoot database connection issues inside a containerized NestJS app?
-To be honestm I don't have a confident answer to this question, but I can suggest some general steps:
+To be honest, I don't have a confident answer to this question, but I can suggest some general steps:
 1. **Check the logs**: Use `docker logs <container_name>` to check the  logs of the container. Look for any error messages related to database connections.
     - If logs indicate a connection error, it might be due to incorrect database credentials or the database service not being available. 
         - If that is the case, check if the database service is running and accessible from the container using `docker ps` if the database is containerised, start it if it is not running. If the database is running on the a different host, use tools like `ping` or `telnet` to check connectivity from the container to the database host and port.
