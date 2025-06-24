@@ -1,5 +1,5 @@
 # Docker Introduction
-Docker is a platform that allows developers to automate the deploynment of applications inside lightweight, portable containers. These containers can run on any system that has Docker installed, making it easier to ensure consistency across different environments. It improves the development workflow by allowing developers to package applications with all their dependencies, ensuring that they run the same way regardless of where they are deployed.
+Docker is a platform that allows developers to automate the deployment of applications inside lightweight, portable containers. These containers can run on any system that has Docker installed, making it easier to ensure consistency across different environments. It improves the development workflow by allowing developers to package applications with all their dependencies, ensuring that they run the same way regardless of where they are deployed.
 
 ## Tasks
 ### Understand What Docker Is and How It differs from Virtual Machines
