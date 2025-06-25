@@ -1,0 +1,20 @@
+# Docker Compose file for running a local PostgreSQL container
+# For Compose file versioning: https://docs.docker.com/compose/compose-file/compose-versioning/
+
+version: "3.8"  # Defines the version of the Docker Compose file format. 3.8 is widely supported.
+
+services:
+  db:
+    image: postgres  # Pulls the official PostgreSQL image from Docker Hub
+    restart: always  # Automatically restarts the container if it crashes or the system reboots
+    environment:
+      POSTGRES_USER: myuser       # Sets the default PostgreSQL user
+      POSTGRES_PASSWORD: mypassword  # Sets the password for the user
+      POSTGRES_DB: mydb           # Creates a default database named 'mydb'
+    volumes:
+      - ./data:/var/lib/postgresql/data  
+        # Maps a local directory (./data) to the container's data directory
+        # This ensures that database data persists even if the container is removed or recreated
+
+# 🔗 More about how and why Docker Compose works:
+# https://docs.docker.com/compose/intro/history/
