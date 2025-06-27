@@ -102,7 +102,18 @@
     "unauthorised",
     "meds",
     "approach",
-    "Ditude"
+    "Ditude",
+    "organisation",
+    "organisations",
+    "organisational",
+    "psql",
+    "mydb",
+    "postgres",
+    "postgresql",
+    "PostgreSQL",
+    "Postgres",
+    "containerised",
+    "containerisation"
   ],
   "ignorePaths": [
     "node_modules",

@@ -110,7 +110,7 @@ Decorators in NestJS are special annotations that add metadata to classes, metho
 
 ### What are the key differences between NestJS and Express.js?
 Like I mentioned earlier, NestJs and Express.js are both Node,js frameworks used to build web applications, but they have different philosophies and features. Here are the key differences:
-- **NestJS** is a **fullly-featured, opinionated framework** that provides a modular architecture, built-in support for dependency injection, and a powerful CLI. It is designed for building large-scale applications and microservices.
+- **NestJS** is a **fully-featured, opinionated framework** that provides a modular architecture, built-in support for dependency injection, and a powerful CLI. It is designed for building large-scale applications and microservices.
 - **Express.js** is a **minimal, unopinionated framework** that provides a simple way to create web applications and APIs. It is lightweight and flexible, allowing developers to choose their own architecture and libraries.
 ### Why does NestJS use decorators extensively?
 Decorators help organise and label code in a readable way, so NestJS can connect everything automatically. It keeps the architecture clean and reduces boilerplate.
