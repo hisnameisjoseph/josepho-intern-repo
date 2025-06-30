@@ -24,7 +24,7 @@ I understand that `nest generate` is a powerful command that can create various 
 I think the CLI helps with saving time and effort by automating the creation of classes (controllers, services, modules, etc.) and ensuring that the code follows NestJS conventions. It also helps in maintaining a consistent structure across the application.
 
 #### What is the purpose of nest generate?
-`nest generate` or `nest g` is a command used to create new components in a NestJS application. It can quickly creates parts of the application by using predifined templates. Generating components like controllers and services using the CLI ensures that they are set up correctly as it automatically wires them into the module.
+`nest generate` or `nest g` is a command used to create new components in a NestJS application. It can quickly creates parts of the application by using predefined templates. Generating components like controllers and services using the CLI ensures that they are set up correctly as it automatically wires them into the module.
 > Supporting *feature-based folders* structure
 
 #### How does using the CLI ensure consistency across the codebase?
