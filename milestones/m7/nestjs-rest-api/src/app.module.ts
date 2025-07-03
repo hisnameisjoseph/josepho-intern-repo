@@ -8,7 +8,6 @@ import { PostsModule } from './posts/posts.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
 import { UserModule } from './user/user.module';
-import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
