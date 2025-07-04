@@ -9,10 +9,10 @@ async function seedUsers() {
   const userRepo = AppDataSource.getRepository(User);
 
   const users = [
-    { firstName: 'Jeffery', lastName: 'Ho', age: 23 },
-    { firstName: 'Jasmin', lastName: 'Ho', age: 21 },
-    { firstName: 'Joseph', lastName: 'Liao', age: 26 },
-    { firstName: 'Tiffany', lastName: 'Liao', age: 23 },
+    { firstName: 'Jeffery', lastName: 'Ho', age: 23, email: 'jeffery.ho@example.com' },
+    { firstName: 'Jasmin', lastName: 'Ho', age: 21, email: 'jasmin.ho@example.com' },
+    { firstName: 'Joseph', lastName: 'Liao', age: 26, email: 'joseph.liao@example.com' },
+    { firstName: 'Tiffany', lastName: 'Liao', age: 23, email: 'tiffany.liao@example.com' },
   ];
 
   for (const data of users) {                   // loop through each object in the user array
