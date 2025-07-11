@@ -1,11 +1,15 @@
-# Stage 1: Build
+# Stage 1: Dev mode
 FROM node:18
 
 WORKDIR /usr/src/app
 
 COPY package*.json ./
+# Install with devDependencies
 RUN npm install
 
 COPY . .
+
+# Optional: enable source maps
+ENV NODE_ENV=development
 
 CMD ["npm", "run", "start:dev"]

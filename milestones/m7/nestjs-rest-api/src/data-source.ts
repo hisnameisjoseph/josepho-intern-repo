@@ -1,6 +1,6 @@
 import "reflect-metadata"
 import { DataSource } from "typeorm"
-import { User } from "./entity/User"
+import { User } from "./user/entities/user.entity" // <-- use correct entity
 import { config } from "dotenv"
 config() // Load environment variables from .env file
 
@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
-    synchronize: false, // Ensure tables are created before seeding
+    synchronize: true, // Ensure tables are created before seeding
     logging: false,
     entities: [User],
     migrations: ['src/migrations/*.ts'],

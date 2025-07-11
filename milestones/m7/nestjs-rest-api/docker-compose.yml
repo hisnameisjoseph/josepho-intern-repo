@@ -18,11 +18,11 @@ services:
     build: .
     container_name: nest-api
     ports:
-      - '3000:3000'
+      - '3001:3000'
     depends_on:
       - postgres
     volumes:
-      - .:/usr/src/app
+      - ./src:/usr/src/app/src
     command: npm run start:dev
     environment:
       DB_HOST: postgres

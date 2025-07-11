@@ -1,5 +1,6 @@
+// milestones/m7/nestjs-rest-api/src/index.ts
 import { AppDataSource } from "./data-source"
-import { User } from "./entity/User"
+import { User } from "./user/entities/user.entity"
 
 AppDataSource.initialize().then(async () => {
 

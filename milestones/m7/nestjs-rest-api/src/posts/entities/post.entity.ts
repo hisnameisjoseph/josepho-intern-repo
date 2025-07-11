@@ -3,11 +3,11 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 @Entity()
 export class Post {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number; // <- use ! to tell TS “I will handle this”
 
   @Column()
-  title: string;
+  title!: string;
 
   @Column()
-  content: string;
+  content!: string;
 }
