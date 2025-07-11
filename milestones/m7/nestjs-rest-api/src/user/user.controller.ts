@@ -3,6 +3,11 @@ import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 
+// Adding additional decorators for issue #36 to the UserController
+import { UseInterceptors } from '@nestjs/common';
+import { LoggingInterceptor } from '../interceptors/logging.interceptor';
+
+@UseInterceptors(LoggingInterceptor)
 @Controller('user')
 export class UserController {
   constructor(private readonly userService: UserService) {}
@@ -14,6 +19,7 @@ export class UserController {
 
   @Get()
   findAll() {
+    console.log('📥 GET /user endpoint hit!');
     return this.userService.findAll();
   }
 

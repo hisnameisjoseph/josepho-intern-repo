@@ -1,52 +1,40 @@
 import { Injectable } from '@nestjs/common';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
 import { CreatePostDto } from './dto/create-post.dto';
 import { UpdatePostDto } from './dto/update-post.dto';
-
-export class Post {
-  id: number;
-  title: string;
-  content: string;
-}
+import { Post } from './entities/post.entity';
 
 @Injectable()
 export class PostsService {
-  private posts: Post[] = [];
-  create(createPostDto: CreatePostDto) {
-    const post = { id: Date.now(), ...createPostDto };
-    this.posts.push(post);
-    return post;
+  constructor(
+    @InjectRepository(Post)
+    private readonly postRepository: Repository<Post>,
+  ) {}
+
+  async create(createPostDto: CreatePostDto): Promise<Post> {
+    const post = this.postRepository.create(createPostDto);
+    return await this.postRepository.save(post);
   }
 
-  findAll() {
-    return this.posts;
+  async findAll(): Promise<Post[]> {
+    return await this.postRepository.find();
   }
 
-  findOne(id: number) {
-  const post = this.posts.find(post => post.id === id);
-  if (post) {
-    return post;
-  }
-  // If you want to throw an exception instead, you can use:
-  // throw new NotFoundException(`Post with id #${id} not found`);
-  // For now, returning a string as per the original request
-    return `Not found post with id #${id}`;
+  async findOne(id: number): Promise<Post | null> {
+    return await this.postRepository.findOneBy({ id });
   }
 
-  update(id: number, updatePostDto: UpdatePostDto) {
-    const post = this.posts.find(post => post.id === id);
-    if (post) {
-      Object.assign(post, updatePostDto);
-      return post;
+  async update(id: number, updatePostDto: UpdatePostDto): Promise<Post | null> {
+    await this.postRepository.update(id, updatePostDto);
+    return await this.postRepository.findOneBy({ id });
+  }
+
+  async remove(id: number): Promise<string> {
+    const result = await this.postRepository.delete(id);
+    if (result.affected) {
+      return `This action removes a #${id} post`;
     }
-    return null; // or throw an exception if preferred
-  }
-
-  remove(id: number) {
-  const index = this.posts.findIndex(post => post.id === id);
-  if (index > -1) {
-    this.posts.splice(index, 1);
-    return `This action removes a #${id} post`;
-  }
-  return `Post with id #${id} not found`;
+    return `Post with id #${id} not found`;
   }
 }

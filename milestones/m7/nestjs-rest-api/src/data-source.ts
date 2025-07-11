@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
-    synchronize: false, // Set to false in production or when using migrations
+    synchronize: false, // Ensure tables are created before seeding
     logging: false,
     entities: [User],
     migrations: ['src/migrations/*.ts'],

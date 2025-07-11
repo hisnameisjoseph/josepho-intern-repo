@@ -7,11 +7,14 @@ export class User {
   id: number;
 
   @Column()
-  name: string;
+  firstName: string;
+
+  @Column()
+  lastName: string;
+
+  @Column()
+  age: number;
 
   @Column()
   email: string;
-
-  @Column({ default: true })
-  isActive: boolean;
 }
