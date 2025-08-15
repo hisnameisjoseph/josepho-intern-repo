@@ -20,3 +20,6 @@ Screenshot of the Kanban board
 
 Screenshot of the status of the issue (Agile Workflows & Kanban #5)
 <img width="785" alt="Screenshot 2025-06-06 at 12 40 18 pm" src="https://github.com/user-attachments/assets/488ed62a-16ba-4773-b269-f0546538b54c" />
+
+This is a screenshot of the Backend Kanban board, as you can see, I have been assigned issues to work on.
+![Backend Kanban Board](image.png)
